@@ -17,13 +17,13 @@
       {
         "pagePath": "pages/index/index",
         "iconPath": "src/images/icon1.png",
-        "selectedIconPath": "src/images/icon1.png",
+        "selectedIconPath": "src/images/icon1_sel.png",
         "text": "组件"
       },
       {
         "pagePath": "pages/api/api",
         "iconPath": "src/images/icon2.png",
-        "selectedIconPath": "src/images/icon2.png",
+        "selectedIconPath": "src/images/icon2_sel.png",
         "text": "API接口"
       }
     ]
