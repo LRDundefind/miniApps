@@ -10,4 +10,10 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}} </text>  
   </view>
+  <view class='main'>
+    <view class='list' wx:for="{{data}}" wx:for-index="eq">
+      <view class="list-title" bindtap="onChangeShowState">{{eq}},{{item.text}}</view>
+      <view class="item" wx:for="{{item.item}}" wx:if="currentTab == eq">{{index}},{{item.text}}</view>
+    </view>
+  </view>
 </view>

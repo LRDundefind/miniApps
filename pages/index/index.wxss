@@ -15,3 +15,11 @@
 .userinfo-nickname {
   color: #aaa;
 }
+
+.main{
+  width: 100%;
+}
+.main .list-title{
+  margin-top: 10px;
+  border: 1px #ccc solid;
+}

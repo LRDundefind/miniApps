@@ -5,6 +5,33 @@ const app = getApp()
 Page({
   data: {
     motto: '演示小程序的组件能力',
+    data: [{
+      text:'视图容器',
+      item:[
+        {text:'view'},
+        {text:'scroll-view'},
+        {text:'swiper'},
+        {text:'movable-area'},
+        {text:'cover-view'}
+      ]
+    },{
+      text: '基础内容',
+      item: [
+        { text: 'icon' },
+        { text: 'text' },
+        { text: 'right-text' },
+        { text: 'progress' }
+      ]
+    },{
+      text: '表单组件',
+      item: [
+        { text: 'button' },
+        { text: 'checkbox' },
+        { text: 'form' },
+        { text: 'input' }
+      ]
+    }],
+    currentTab: 0,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -50,5 +77,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onChangeShowState: function(e) {
+    console.log(e);
+    var that = this;
+    that.setData({
+      currentTab: 1 
+    })
+  } 
 })
