@@ -31,7 +31,7 @@ Page({
         { text: 'input' }
       ]
     }],
-    currentTab: 0,
+    currentTab: null,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -79,10 +79,10 @@ Page({
     })
   },
   onChangeShowState: function(e) {
-    console.log(e);
+    //console.log(e);
     var that = this;
     that.setData({
-      currentTab: 1 
+      currentTab: e.target.dataset.index
     })
   } 
 })
