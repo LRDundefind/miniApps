@@ -11,9 +11,9 @@
     <text class="user-motto">{{motto}} </text>  
   </view>
   <view class='main'>
-    <view class='list' wx:for="{{data}}" wx:for-index="eq">
-      <view class="list-title" data-index="{{eq}}" bindtap="onChangeShowState">{{eq}},{{item.text}}</view>
-      <view class="item {{currentTab == eq?'show':'hide'}}" wx:for="{{item.item }}" >{{index}},{{item.text}}</view>
+    <view class='list' wx:for="{{data}}" wx:for-index="eq" wx:key="id">
+      <button type="default" size='mini' class="list-title" data-index="{{eq}}" bindtap="onChangeShowState">{{eq}},{{item.text}}</button>
+      <view class="item {{currentTab == eq?'show':'hide'}}" wx:for="{{item.item }}" wx:key="*this"><navigator url="view/index" hover-class="navigator-hover">{{index}},{{item.text}}</navigator></view>
     </view>
   </view>
 </view>

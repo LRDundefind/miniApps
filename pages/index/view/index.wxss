@@ -1,0 +1,16 @@
+.bc_green{
+  background: green;
+}
+.bc_red{
+  background: red;
+}
+.bc_blue{
+  background: blue;
+}
+.flex-wrp{
+    display: flex;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+}

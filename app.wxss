@@ -15,3 +15,9 @@
 .show{
   display: show;
 }
+.main-title{
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  border-bottom: 1px #ccc solid;
+}

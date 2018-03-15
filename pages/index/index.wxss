@@ -19,7 +19,11 @@
 .main{
   width: 100%;
 }
-.main .list-title{
+.main .list .list-title{
   margin-top: 10px;
-  border: 1px #ccc solid;
+  width: 100%;
+}
+.main .item{
+  padding: 4px 0;
+  border-bottom:1px #ccc solid;
 }
